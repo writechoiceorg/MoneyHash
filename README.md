@@ -1,2 +1,2 @@
 # MoneyHash
-Supporting repository for MoneyHash documentation.
+Supporting repository for MoneyHash documentation!
