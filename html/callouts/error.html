@@ -1,0 +1,65 @@
+<style>
+  .error_callout_container {
+    background: rgba(233, 232, 255, 0.24);
+    border: 1px solid var(--grey-2, #ECEFF2);
+    border-radius: 8px;
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--border-danger-subtle, #E9ADA4);
+    background: var(--background-danger-subtler, #FAEBE9);
+  }
+
+  .error_callout_container h3 {
+    margin: 0 0 0.5rem;
+    color: var(--text-foundations-boldest, #0C1E3D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: DM Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+  }
+
+  .error_callout_container p,
+  .contentContainer ul {
+    margin: 0;
+    color: var(--text-foundations-boldest, #0C1E3D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: DM Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem;
+  }
+
+  .error_callout_container a,
+  .content_container a {
+    cursor: pointer;
+  }
+
+  .content_container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+</style>
+
+<body>
+  <div class="error_callout_container">
+    <div class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M8.00002 6V7.33333M8.00002 10H8.00669M3.38122 12.6667H12.6188C13.6452 12.6667 14.2867 11.5556 13.7735 10.6667L9.15472 2.66667C8.64152 1.77778 7.35852 1.77778 6.84532 2.66667L2.22652 10.6667C1.71332 11.5556 2.35482 12.6667 3.38122 12.6667Z" stroke="#CA3821" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div>
+      <h3>Error</h3>
+      <div class="content_container">
+        <p>
+          This is an error example text.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
