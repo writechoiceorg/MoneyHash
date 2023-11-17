@@ -3,8 +3,12 @@
 <link
   href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Raleway:wght@100;200&display=swap"
   rel="stylesheet">
-  
+
 <style>
+  .error_callout_container,
+  .info_callout_container,
+  .neutral_callout_container,
+  .success_callout_container,
   .warning_callout_container {
     background: rgba(233, 232, 255, 0.24);
     border: 1px solid var(--grey-2, #ECEFF2);
@@ -12,11 +16,12 @@
     display: flex;
     gap: 1rem;
     padding: 1.5rem;
-    border-radius: 0.375rem;
-    border: 1px solid var(--border-warning-subtle, #EBD697);
-    background: var(--background-warning-subtler, #FAF5E6);
   }
 
+  .error_callout_container h3,
+  .info_callout_container h3,
+  .neutral_callout_container h3,
+  .success_callout_container h3,
   .warning_callout_container h3 {
     margin: 0 0 0.5rem;
     color: var(--text-foundations-boldest, #0C1E3D);
@@ -28,6 +33,10 @@
     line-height: 1.25rem;
   }
 
+  .error_callout_container p,
+  .info_callout_container p,
+  .neutral_callout_container p,
+  .success_callout_container p,
   .warning_callout_container p,
   .contentContainer ul {
     margin: 0;
@@ -40,6 +49,10 @@
     line-height: 1.125rem;
   }
 
+  .error_callout_container a,
+  .info_callout_container a,
+  .neutral_callout_container a,
+  .success_callout_container a,
   .warning_callout_container a,
   .content_container a {
     cursor: pointer;
@@ -50,8 +63,35 @@
     flex-direction: column;
     gap: 24px;
   }
+
+  /* Specific styles for each callout type */
+  .error_callout_container {
+    border: 1px solid var(--border-danger-subtle, #E9ADA4);
+    background: var(--background-danger-subtler, #FAEBE9);
+  }
+
+  .info_callout_container {
+    border: 1px solid var(--border-info-subtle, #96C4EB);
+    background: var(--background-info-subtler, #E6F1FA);
+  }
+
+  .neutral_callout_container {
+    border: 1px solid var(--border-foundations-bold, #C2C7D0);
+    background: var(--background-foundations-subtlest, #F4F5F5);
+  }
+
+  .success_callout_container {
+    border: 1px solid var(--border-success-subtle, #A4D8C2);
+    background: var(--background-success-subtler, #E9F6F0);
+  }
+
+  .warning_callout_container {
+    border: 1px solid var(--border-warning-subtle, #EBD697);
+    background: var(--background-warning-subtler, #FAF5E6);
+  }
 </style>
 
+<!--CALLOUT-->
 <body>
   <div class="warning_callout_container">
     <div class="icon">
@@ -66,7 +106,8 @@
     <div>
       <h3>Sandbox</h3>
       <div class="content_container">
-        <p>If you require guidance on how to use MoneyHash's Sandbox, refer to the <a onclick="window.location='sandbox'">Sandbox guide page</a>.
+        <p>If you require guidance on how to use MoneyHash's Sandbox, refer to the <a
+            onclick="window.location='sandbox'">Sandbox guide page</a>.
           This resource provides detailed instructions to enhance your testing experience.
         </p>
       </div>

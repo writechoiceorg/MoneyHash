@@ -1,0 +1,81 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Raleway:wght@100;200&display=swap"
+  rel="stylesheet">
+
+<style>
+  .api_endpoint_container {
+    display: flex;
+    padding: 0.25rem;
+    padding-left: 0.50rem;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 0.1625rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--border-foundations-subtle, #E5E6E9);
+    background: var(--background-foundations-subtlest, #F4F5F5);
+    width: fit-content;
+    min-width: 300px;
+  }
+
+  .flag {
+    display: flex;
+    padding: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.375rem;
+    color: var(--text-foundations-inverse, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: DM Sans;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+  }
+
+  .flag.post {
+    background: var(--background-info-bold, #006ECF);
+  }
+
+  .flag.get {
+    background: var(--background-info-bold, #0e9b71);
+  }
+
+  .flag.put {
+    background: var(--background-info-bold, #674ead);
+  }
+
+  .flag.patch {
+    background: var(--background-info-bold, #df7d03);
+  }
+
+  .flag.delete {
+    background: var(--background-info-bold, #c71b29);
+  }
+
+  .endpoint {
+    display: flex;
+    align-self: center;
+    color: var(--text-foundations-bold, #42526D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: DM Sans;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+  }
+</style>
+
+<!-- ENDPOINT EXAMPLE -->
+<body>
+  <div class="api_endpoint_container">
+    <div class="flag post">
+      POST
+    </div>
+    <div class="endpoint">
+      /api/v1.1/payments/intent/
+    </div>
+  </div>
+</body>

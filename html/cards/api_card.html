@@ -11,7 +11,9 @@
     gap: 16px;
   }
 
-  .api_card {
+  .api_card,
+  .card_no_link,
+  .card_with_link {
     font-family: "DM Sans", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     border-width: 1px;
     border-radius: 0.5rem;
@@ -26,31 +28,35 @@
     background: var(--background-foundations-default, #FFF);
   }
 
-  .api_card:hover {
+  /* Hover styles for cards with link */
+  .card_with_link:hover {
     cursor: pointer;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.10), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 
-  .api_card:focus {
+  /* Focus styles for cards with link */
+  .card_with_link:focus {
     border: 2px solid var(--border-info-bold, #006ECF) !important;
   }
 
-  .api_card_title {
+  .api_card_title,
+  .card_with_link .card_title,
+  .card_no_link .card-title {
     width: 100%;
     display: flex;
     gap: 10px;
   }
 
-  .api_card_title .api_card_img {
-    max-width: 30px;
-    max-height: 24px;
-    margin: 0 !important;
+  .card_no_link .card-title {
+    justify-content: start;
   }
 
-  .api_card .api_card_title h3 {
+  /* Styles for card titles */
+  .api_card_title h3,
+  .card_no_link .card-title h3,
+  .card_with_link .card_title h3 {
     margin: 0;
     font-size: large;
-    color: #006ECF;
     color: var(--text-info, #006ECF);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: DM Sans;
@@ -58,9 +64,14 @@
     font-weight: 500;
     line-height: 1.25rem;
     font-size: 0.975rem;
+    align-self: center;
   }
 
-  .api_card .api_card_text p {
+  /* Styles for card text */
+  .api_card_text p,
+  .card_no_link .card-text p,
+  .card_with_link .card_text p {
+    margin: 10px 0 0 0;
     color: #66768F;
     margin: 0;
     color: var(--text-foundations-subtle, #66768F);
@@ -72,7 +83,22 @@
     line-height: 1.125rem;
   }
 
-  .api_card .api_card_title .api_ref {
+  /* Styles for API reference tag */
+  .api_card_title .api_ref,
+  .card_no_link .card-title svg path,
+  .card_with_link .card_title svg path {
+    stroke: #006ECF !important;
+  }
+
+  .api_card_title .api_ref,
+  .card_no_link .card-title svg,
+  .card_with_link .card_title svg {
+    max-width: 30px;
+    max-height: 24px;
+    margin: 0 !important;
+  }
+
+  .api_card_title .api_ref {
     padding: 0.0625rem;
     background-color: #0272d9;
     color: var(--text-foundations-inverse, #FFF);
