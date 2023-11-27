@@ -120,30 +120,92 @@
 
   <div class="card_container">
 
-    <div tabindex="0" class="card_with_link" onclick="window.location=''">
+    <!-- Hosted Page -->
+    <div tabindex="0" class="card_with_link" onclick="window.location='hosted-page'">
       <div class="card_title">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M9 2H15C20 2 22 4 22 9V15C22 20 20 22 15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2Z" stroke="#0C1E3D"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M8.57007 15.27L15.11 8.73001" stroke="#0C1E3D" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" />
-          <path
-            d="M8.98001 10.37C9.65932 10.37 10.21 9.81932 10.21 9.14001C10.21 8.4607 9.65932 7.91 8.98001 7.91C8.3007 7.91 7.75 8.4607 7.75 9.14001C7.75 9.81932 8.3007 10.37 8.98001 10.37Z"
-            stroke="#0C1E3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path
-            d="M15.52 16.09C16.1993 16.09 16.75 15.5393 16.75 14.86C16.75 14.1807 16.1993 13.63 15.52 13.63C14.8407 13.63 14.29 14.1807 14.29 14.86C14.29 15.5393 14.8407 16.09 15.52 16.09Z"
-            stroke="#0C1E3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <h3>
-
-        </h3>
+        <h3>Hosted Page</h3>
       </div>
       <div class="card_text">
         <p>
-          
+          This is the simplest and quickest way to integrate with MoneyHash. No coding is required. You only need to
+          have access to our dashboard to be able to create a link to the Hosted Page. You will redirect your clients to
+          this link when it's time for them to perform the payment. Moneyhash fully controls the payment process, and no
+          customizations are available.
         </p>
       </div>
     </div>
+
+    <!-- Embedded -->
+    <div tabindex="0" class="card_with_link" onclick="window.location='embedded'">
+      <div class="card_title">
+        <h3>Embedded</h3>
+      </div>
+      <div class="card_text">
+        <p>
+          This option requires API calls and is similar to the Hosted Page, but it offers more flexibility. You need to
+          create an intent by calling our API. The response will provide you with a URL. You can redirect your customer
+          to the provided URL or use an iframe to embed the checkout into your webpage. Additionally, this integration
+          allows you to send information within the request to improve your customer's experience.
+        </p>
+      </div>
+    </div>
+
+    <!-- JavaScript SDK -->
+    <div tabindex="0" class="card_with_link" onclick="window.location='javascript-sdk'">
+      <div class="card_title">
+        <h3>JavaScript SDK</h3>
+      </div>
+      <div class="card_text">
+        <p>
+          You can use the JS SDK option for Web applications. The SDK option allows you to customize your customer's
+          checkout experience and align the checkout to your website's styles.
+        </p>
+      </div>
+    </div>
+
+    <!-- Mobile SDKs -->
+    <div tabindex="0" class="card_with_link" onclick="window.location='mobile-sdks'">
+      <div class="card_title">
+        <h3>Mobile SDKs</h3>
+      </div>
+      <div class="card_text">
+        <p>
+          You can use the mobile SDK options for mobile applications. MoneyHash provides different SDK versions to cover
+          all operational systems. These SDK options allow you to customize your customer's checkout experience and
+          align the checkout to your app styles.
+        </p>
+      </div>
+    </div>
+
+    <!-- External API -->
+    <div tabindex="0" class="card_with_link" onclick="window.location='external-api'">
+      <div class="card_title">
+        <h3>External API</h3>
+      </div>
+      <div class="card_text">
+        <p>
+          Perform a complete integration based on API calls. Use our various endpoints to create intents and
+          transactions, execute payments, and more. Here, you are not required to be PCI compliant, as MoneyHash still
+          collects customer's payment information.
+        </p>
+      </div>
+    </div>
+
+    <!-- Direct API -->
+    <div tabindex="0" class="card_with_link" onclick="window.location='direct-api'">
+      <div class="card_title">
+        <h3>Direct API</h3>
+      </div>
+      <div class="card_text">
+        <p>
+          Perform a complete integration based on API calls. Use our various endpoints to create intents and
+          transactions, execute payments, and more. This integration requires you to be PCI compliant, and you will be
+          in charge of every step of your customer's experience, including acquiring the payment information from your
+          customer.
+        </p>
+      </div>
+    </div>
+
 
   </div>
 
